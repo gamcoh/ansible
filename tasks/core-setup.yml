@@ -1,0 +1,9 @@
+- name: Install System Packages
+  become: true
+  community.general.pacman:
+    name: ["unzip", "htop", "neofetch", "curl", "wget", "neovim", "tmux", "fzf", "ripgrep", "fish", "zsh", "fd", "bat", "chezmoi", "age", "exa"]
+    state: present
+    update_cache: true
+  tags:
+    - install
+    - core

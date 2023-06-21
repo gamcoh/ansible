@@ -1,0 +1,6 @@
+- name: Cloning .dotfiles
+  shell: chezmoi init --apply gamcoh
+  tags:
+    - install
+    - dotfiles
+    - chezmoi

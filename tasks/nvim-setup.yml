@@ -1,0 +1,10 @@
+- name: Remove neovim
+  shell: rm -rf ~/neovim
+  tags:
+    - install
+    - neovim
+- name: Install neovim
+  ansible.builtin.git:
+    repo: 'https://github.com/NvChad/NvChad'
+    dest: "~/.config/neovim"
+    recursive: yes
